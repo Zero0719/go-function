@@ -2,6 +2,10 @@ package convert
 
 import "strconv"
 
+// @title StringToInt
+// @description string转int
+// @param param string "需要转换的字符串"
+// @return int "转换失败则返回0"
 func StringToInt(param string) int {
 	num, err := strconv.Atoi(param)
 	if err != nil {
